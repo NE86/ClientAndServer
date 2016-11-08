@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class ClientThread extends Thread {
     private clientServer.message.MessageQueue MessageQueue;
-    private volatile boolean threadLife = true;
+    private boolean threadLife = true;
     SocketClient workingSocketClient;
 
     public ClientThread(MessageQueue MessageQueue) {
